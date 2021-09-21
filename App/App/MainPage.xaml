@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App.MainPage"
+             BackgroundImageSource="DfB_zUhW0AAsn5u.jpg">
+
+
+
+    <Grid>
+        <Grid.Resources>
+            <ResourceDictionary>
+                <Color x:Key="MiColor">green</Color>
+            </ResourceDictionary>
+        </Grid.Resources>
+    
+        
+    <StackLayout>
+            
+            <BoxView Color="{StaticResource MiColor}" HeightRequest="10"/>
+            <Image Source="unnamed.png"
+               HeightRequest="300" />
+
+
+            <Label Text="Bienvenido a SIMEVA: " HorizontalTextAlignment="Center" TextColor="Green" FontSize="40" />
+            <Entry Opacity="0.7" Background="black" TextColor="Green" Placeholder="Nombre" PlaceholderColor="Green" HorizontalTextAlignment="Center"></Entry>
+            <Entry Opacity="0.7"  Background="black" TextColor="Green" IsPassword="True" Placeholder="Contraseña" PlaceholderColor="Green" HorizontalTextAlignment="Center"></Entry>
+            <Button Text="Iniciar sesión" TextColor="{StaticResource MiColor}" FontSize="22" CornerRadius="40" BackgroundColor="Black"/>
+
+
+        <Button>
+            <Button.Text>Registrarse</Button.Text>
+                <Button.TextColor>Green</Button.TextColor>
+            <Button.FontSize>22</Button.FontSize>
+            <Button.CornerRadius>40</Button.CornerRadius>
+            <Button.BackgroundColor>black</Button.BackgroundColor>
+            
+             
+        </Button>
+
+            
+        </StackLayout>
+    
+    </Grid>
+
+</ContentPage>
